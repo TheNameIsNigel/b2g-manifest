@@ -1,0 +1,29 @@
+<?xml version="1.0" ?><manifest>
+  <remote name="r00t"
+        fetch="git://github.com/"
+        review="review.gocanarytel.com"
+        revision="refs/heads/b2g-5.1.0_r1"
+        sync-c="true"
+        sync-j="8" />
+  <include name="base-l-aosp.xml"/>
+
+  <default remote="caf" revision="refs/tags/android-5.1.0_r1" sync-j="8"/>
+
+  <!-- Nexus 5 specific things -->
+  <project name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon"/>
+  <project name="android_device_huawei_mt2" path="device/huawei/mt2" remote="r00t" revision="b2g-5.1.0_r1"/>
+  <project name="android_kernel_huawei_msm8928" path="kernel/huawei/msm8928" remote="r00t" revision="b2g-5.1.0_r1"/>
+  <project name="proprietary_vendor_huawei" path="vendor/huawei" remote="r00t" revision="b2g-5.1.0_r1"/>
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8"/>
+  <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt"/>
+  <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan"/>
+  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio"/>
+  <project name="hardware_qcom_display" path="hardware/qcom/display" remote="b2g" revision="b2g-5.1.0_r1"/>
+  <project name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster"/>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
+  <project name="platform/hardware/qcom/power" path="hardware/qcom/power"/>
+  <project name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan"/>
+  <project name="platform/hardware/ril" path="hardware/ril"/>
+
+</manifest>
