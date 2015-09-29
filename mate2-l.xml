@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><manifest>
   <remote name="r00t"
-        fetch="git://github.com/"
+        fetch="git://github.com/iAMr00t"
         review="review.gocanarytel.com"
         revision="refs/heads/b2g-5.1.0_r1"
         sync-c="true"
